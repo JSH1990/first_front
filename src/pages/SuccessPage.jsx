@@ -2,11 +2,15 @@ import React from "react";
 
 function SuccessPage(){
     return (
-        <div className="container-fluid mt-5">
-            <h2>성공</h2>
-            <p>좋다야</p>
+        <div>
+        <Welcome name="React" />
+        <Welcome name="View1" />
         </div>
     );
+}
+
+function Welcome(props){
+    return <h1>{props.name} 안녕</h1>
 }
 
 export default SuccessPage;
